@@ -23,5 +23,10 @@ const displayStack = stack => {
   return;
 };
 
+starTrek.pop();
+starTrek.pop();
+starTrek.push('Scotty');
+
+
 peek(starTrek);
 displayStack(starTrek);
