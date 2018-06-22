@@ -11,3 +11,17 @@ starTrek.push('McCoy');
 starTrek.push('Scotty');
 
 console.log(JSON.stringify(starTrek, null, 2));
+const peek = stack => console.log(stack.top.data);
+
+const displayStack = stack => {
+  if(!stack.top) return null;
+
+  while(stack.top!==null){
+    let lastItem = stack.pop(); console.log(lastItem);
+  }
+  
+  return;
+};
+
+peek(starTrek);
+displayStack(starTrek);

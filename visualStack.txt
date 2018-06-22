@@ -1,0 +1,18 @@
+
+
+
+
+                                                                      next ----------> NULL
+                                                                      this.top  
+                                                                      data - Scotty
+                                              next -----------------> index3                                             
+                                              data - McCoy
+                     next ------------------> index2
+                     data - Spock
+next ------------->  index1                                                             
+index0
+this.top
+data - Kirk
+
+
+
