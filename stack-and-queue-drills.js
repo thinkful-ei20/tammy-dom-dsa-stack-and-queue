@@ -52,25 +52,17 @@ const is_palindrome = str => {
     stack1.push(str[i]);
   }
 
+  for (let i = 0; i < str.length; i ++){
+    if (stack1.pop() !== str[i]) {
+      return false;
+    } 
 
-  const stack2 = new Stack();
-
-  console.log(JSON.stringify(stack1, null, 2));
-  // console.log(stack1.pop());
-  // console.log(stack1.pop());
-  // console.log(stack1.pop());
-
-  // console.log(stack1.pop());
-  // console.log(stack1.pop());
-
-  while(stack1.top) {
-    let popped = stack1.pop();
-    console.log(stack2.push(popped));
-    
+    return true;
   }
-  ///pop stack1 then push into stack2
-  //compare 'str' to newString created
+
 
 };
 
-is_palindrome('hello');
+// console.log(is_palindrome('hello')); //false
+// console.log(is_palindrome('dad')); //true 
+// console.log(is_palindrome('A man, a plan, a canal: Panama')); //true
